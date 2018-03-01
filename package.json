@@ -1,9 +1,9 @@
 {
   "name": "ember-bootstrap-confirm",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "A minimum viable component for Bootstrap's bs-confirm in ember-cli apps.",
+  "repository": "https://github.com/dmcouncil/ember-bootstrap-confirm",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Anne Geiersbach, Parker Morse",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
