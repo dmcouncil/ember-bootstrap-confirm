@@ -1,6 +1,6 @@
 {
   "name": "ember-bootstrap-confirm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A minimum viable component for Bootstrap's bs-confirm in ember-cli apps.",
   "repository": "https://github.com/dmcouncil/ember-bootstrap-confirm",
   "directories": {
@@ -23,8 +23,6 @@
     "ember-cli": "2.4.2",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-dependency-checker": "^1.2.0",
-    "ember-cli-htmlbars": "^1.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-qunit": "^1.2.1",
     "ember-cli-release": "0.2.8",
@@ -43,6 +41,8 @@
     "ember-addon"
   ],
   "dependencies": {
+    "ember-cli-htmlbars": "^1.0.1",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-babel": "^5.1.5"
   },
   "ember-addon": {
