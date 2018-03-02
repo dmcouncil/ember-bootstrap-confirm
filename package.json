@@ -1,6 +1,6 @@
 {
   "name": "ember-bootstrap-confirm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A minimum viable component for Bootstrap's bs-confirm in ember-cli apps.",
   "repository": "https://github.com/dmcouncil/ember-bootstrap-confirm",
   "directories": {
