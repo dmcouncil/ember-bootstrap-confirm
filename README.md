@@ -1,33 +1,35 @@
-# Ember-bootstrap-confirm
+# ember-bootstrap-confirm
 
 An [ember-cli][1] add-on which provides Bootstrap's bs-confirm dialog.
 
-This is a minimum viable plugin: it assumes you already have Bootstrap CSS and JS available in your project (e.g. using [ember-bootstrap][2]). Once installed, you can use
+## Compatibility
 
-    {{bs-confirm noActionText='No' yesActionText='Yes'}}
+* Ember.js v4.8 or above
+* Ember CLI v4.8 or above
+* Node.js v18 or above
 
-to get a confirmation dialog with "No" and "Yes" buttons.
 
 ## Installation
 
-Visit [ember-cli documentation][1] to learn more about installing ember-cli addons.
+```
+ember install ember-bootstrap-confirm
+```
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Usage
 
-## Running Tests
+This is a minimum viable plugin: it assumes you already have Bootstrap CSS and JS available in your project (e.g. using [ember-bootstrap][2]). Once installed, you can use
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+    <BsConfirm @noActionText='No' @yesActionText='Yes' />
 
-## Building
+to get a confirmation dialog with "No" and "Yes" buttons.
 
-* `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/][1].
+## Contributing
 
-[1]: https://ember-cli.com/
-[2]: http://www.ember-bootstrap.com/
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).

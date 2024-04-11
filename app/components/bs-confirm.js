@@ -1,3 +1,1 @@
-import BsConfirm from 'ember-bootstrap-confirm/components/bs-confirm';
-
-export default BsConfirm;
+export { default } from 'ember-bootstrap-confirm/components/bs-confirm';

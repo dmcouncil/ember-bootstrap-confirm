@@ -1,6 +1,5 @@
-/* jshint node: true */
 'use strict';
 
 module.exports = {
-  name: 'ember-bootstrap-confirm'
+  name: require('./package').name,
 };
