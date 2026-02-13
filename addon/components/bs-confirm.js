@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { action, computed } from '@ember/object';
 import { htmlSafe } from '@ember/template';
 
 // Despite being re-written for Ember 5, this component cannot take advantage of the newest 'Glimmer' framework,
@@ -25,41 +25,39 @@ export default Component.extend({
 
   // Actions
 
-  actions: {
-    openDialog(message, callback, options) {
-      this.set('message', message);
-      this.set('yesCallback', callback);
+  openDialog: action(function(message, callback, options) {
+    this.set('message', message);
+    this.set('yesCallback', callback);
 
-      this._processOptions(options || {});
-      this._resetUI();
+    this._processOptions(options || {});
+    this._resetUI();
 
-      $(this.element).modal({
-        backdrop: 'static'
-      });
-    },
+    $(this.element).modal({
+      backdrop: 'static'
+    });
+  }),
 
-    yes() {
-      if (this.typeToConfirmText) {
-        if (this.typeToConfirmValue.toUpperCase() !== this.typeToConfirmText.toUpperCase()) {
-          $(this.element).find('.type-to-confirm').addClass('has-error');
-          return;
-        }
+  yes: action(function() {
+    if (this.typeToConfirmText) {
+      if (this.typeToConfirmValue.toUpperCase() !== this.typeToConfirmText.toUpperCase()) {
+        $(this.element).find('.type-to-confirm').addClass('has-error');
+        return;
       }
-
-      let yesCallback = this.yesCallback;
-      if (yesCallback) {
-        $(this.element).modal('hide');
-        return yesCallback();
-      }
-    },
-
-    no() {
-      if (this.noCallback) {
-        this.noCallback();
-      }
-      $(this.element).modal('hide');
     }
-  },
+
+    let yesCallback = this.yesCallback;
+    if (yesCallback) {
+      $(this.element).modal('hide');
+      return yesCallback();
+    }
+  }),
+
+  no: action(function() {
+    if (this.noCallback) {
+      this.noCallback();
+    }
+    $(this.element).modal('hide');
+  }),
 
   // Properties
 

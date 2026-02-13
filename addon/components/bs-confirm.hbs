@@ -1,12 +1,12 @@
 <div class='modal-dialog {{if this.dialogClasses this.dialogClasses}}'>
   <div class='modal-content'>
     <div class='modal-header'>
-      <button type='button' class='close' aria-label='Close' {{action 'no'}}>
+      <button type='button' class='close' aria-label='Close' {{on 'click' this.no}}>
         <span aria-hidden='true'>&times;</span>
         <span class='sr-only'>Cancel</span>
       </button>
       {{#if this.isWarningTitle}}
-        <span class="modal-title title-warning"><i class="icon icon-warning"></i>&nbsp;&nbsp;{{this.htmlSafeTitle}}</span>
+        <span class='modal-title title-warning'><i class='icon icon-warning'></i>&nbsp;&nbsp;{{this.htmlSafeTitle}}</span>
       {{else}}
         <span class='modal-title'>{{this.htmlSafeTitle}}</span>
       {{/if}}
@@ -23,9 +23,9 @@
 
     <div class='modal-footer'>
       {{#unless this.yesButtonOnly}}
-        <button class="btn btn-default" type='button' {{action 'no'}}>{{this.noActionText}}</button>
+        <button class='btn btn-default' type='button' {{on 'click' this.no}}>{{this.noActionText}}</button>
       {{/unless}}
-      <button class="btn btn-primary" type='button' {{action 'yes'}}>{{this.yesActionText}}</button>
+      <button class='btn btn-primary' type='button' {{on 'click' this.yes}}>{{this.yesActionText}}</button>
     </div>
   </div>
 </div>

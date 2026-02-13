@@ -1,6 +1,6 @@
 {
   "name": "ember-bootstrap-confirm",
-  "version": "1.0.0",
+  "version": "6.4.0",
   "description": "A minimum viable component for Bootstrap's bs-confirm in ember-cli apps.",
   "keywords": [
     "ember-addon"
@@ -28,53 +28,56 @@
     "test:ember-compatibility": "echo [disabled:] ember try:each"
   },
   "dependencies": {
-    "@babel/core": "^7.23.2",
+    "@babel/core": "^7.27.1",
     "@bower_components/bootstrap": "twbs/bootstrap#~3.1.0",
-    "@ember/jquery": "^2.0.0",
+    "@ember/jquery": "2.0.0",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.15",
-    "@babel/plugin-proposal-decorators": "^7.23.2",
-    "@ember/optional-features": "^2.0.0",
-    "@ember/test-helpers": "^3.2.0",
-    "@embroider/test-setup": "^3.0.2",
+    "@babel/eslint-parser": "^7.27.1",
+    "@babel/plugin-proposal-decorators": "^7.27.1",
+    "@ember/optional-features": "^2.2.0",
+    "@ember/test-helpers": "^3.3.1",
+    "@embroider/test-setup": "^4.0.0",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.2",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "broccoli-asset-rev": "^3.0.0",
-    "concurrently": "^8.2.2",
-    "ember-auto-import": "^2.6.3",
-    "ember-cli": "~5.4.1",
+    "concurrently": "^9.1.2",
+    "ember-auto-import": "^2.10.0",
+    "ember-cli": "6.4.0",
     "ember-cli-clean-css": "^3.0.0",
-    "ember-cli-dependency-checker": "^3.3.2",
+    "ember-cli-dependency-checker": "^3.3.3",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
     "ember-load-initializers": "^2.1.2",
-    "ember-page-title": "^8.0.0",
-    "ember-qunit": "^8.0.1",
-    "ember-resolver": "^11.0.1",
-    "ember-source": "~5.4.0",
+    "ember-page-title": "^9.0.1",
+    "ember-qunit": "^9.0.2",
+    "ember-resolver": "^12.0.1",
+    "ember-source": "~6.4.0",
     "ember-source-channel-url": "^3.0.0",
-    "ember-template-lint": "^5.11.2",
-    "ember-try": "^3.0.0",
-    "eslint": "^8.52.0",
-    "eslint-plugin-ember": "^11.11.1",
-    "eslint-plugin-n": "^16.2.0",
-    "eslint-plugin-qunit": "^8.0.1",
+    "ember-template-lint": "^6.1.0",
+    "ember-try": "^4.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-ember": "^12.5.0",
+    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-qunit": "^8.1.2",
+    "globals": "^17.0.0",
     "loader.js": "^4.7.0",
-    "qunit": "^2.20.0",
-    "qunit-dom": "^2.0.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-standard": "^34.0.0",
-    "webpack": "^5.89.0"
+    "qunit": "^2.24.1",
+    "qunit-dom": "^3.4.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^36.0.1",
+    "webpack": "^5.99.7"
   },
   "peerDependencies": {
-    "ember-source": ">= 4.0.0"
+    "ember-source": ">= 5.0.0"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "ember": {
     "edition": "octane"

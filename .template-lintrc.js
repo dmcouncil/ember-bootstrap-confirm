@@ -5,6 +5,7 @@ module.exports = {
 
   rules: {
     'no-action': false,
+    'no-builtin-form-components': false,
     'no-whitespace-for-layout': false
   }
 };
